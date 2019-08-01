@@ -34,7 +34,7 @@ let executarePas = (rand)=>{
 };
 
 
-let returneazaNumar = ()=>Math.floor(Math.random()*numerePosibile.length);
+let returneazaNumar = ()=>numerePosibile[Math.floor(Math.random()*numerePosibile.length)];
 
 
 
@@ -92,7 +92,6 @@ Engine2048.calculeazaScor();
 for(let i=0;i<6;i++){
   Engine2048.adaugaNumarNou();
 }
-divs[0][0].attr('val',2);
 Engine2048.refacereImagini();
 
 })
